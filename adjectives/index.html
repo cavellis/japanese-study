@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+	<head>
+	<meta charset="utf-8">
+	<title>WanaKana Demo</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	 <link href="css/site-styles.css" rel="stylesheet">
+
+	</head>
+
+	<body>
+
+		<div>
+
+			<div class="wk-site-header">
+				<h1 class="wk-site-name">Adjectives</h1>
+			</div>
+
+			<div class="wk-content">
+
+				<h2>Question 1/10</h2>
+				<h3>Conjugate this to: present negative</h3>
+				<h4>さむい</h4>
+				<div id="correct-incorrect">hello</div>
+				<form name="answer">
+					<input id="input-IME" autofocus="true" autocapitalize="off" autocomplete="off" autocorrect="off" placeholder="書いてください" type="text" lang="ja">
+					<button id="submitButton" onclick="evaluateAnswer();return false;">Submit</button>
+				</form>
+	       	</div>
+       	</div>
+		<script type="text/javascript" src="js/wanakana.min.js"></script>
+		<script type="text/javascript">
+			function evaluateAnswer()
+			{
+				var answer = document.getElementById('input-IME').value;
+				var correctIncorrectField = document.getElementById("correct-incorrect");
+
+				if(answer=="さむくない")
+				{
+					 correctIncorrectField.innerHTML = "correct";
+				}
+				else
+				{
+					correctIncorrectField.innerHTML = "incorrect";
+				}
+			}
+
+			(function(wk) {
+
+			///// IME Mode
+
+			var inputIME = document.getElementById('input-IME');
+
+			wk.bind(inputIME);
+
+
+
+			})(window.wanakana);
+
+		</script>
+
+	</body>
+
+</html>
