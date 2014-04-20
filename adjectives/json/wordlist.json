@@ -1,20 +1,40 @@
-{
-	"words:
-	[
-		{
-			"id":0,
-			"word":"さむい",
-			"type":0,
-			"conjugations":["さむいです","さむくないです","さむかったです","さむくなかったです
-			"]
-		}
-	]
-}
+[
+	{
+		"id":0,
+		"word":"さむい",
+		"type":0,
+		"conjugations":
+		[
+			{"id" : "present positive", "conjugation" : "さむいです"},
+			{"id" : "present negative", "conjugation" : "さむくないです"},
+			{"id" : "past positive"	 , "conjugation" : "さむかったです"},
+			{"id" : "past negative"   , "conjugation" : "さむくなかったです"}
+		]
+	},
+	{
+		"id":1,
+		"word":"ふるい",
+		"type":0,
+		"conjugations":
+		[
+			{"id" : "present positive", "conjugation" : "ふるいです"},
+			{"id" : "present negative", "conjugation" : "ふるくないです"},
+			{"id" : "past positive"	 , "conjugation" : "ふるかったです"},
+			{"id" : "past negative"	 , "conjugation" : "ふるくなかったです"}
+		]
+	},
+	{
+		"id":2,
+		"word":"こわい",
+		"type":0,
+		"conjugations":
+		[
+			{"id" : "present positive", "conjugation" : "こわいです"},
+			{"id" : "present negative", "conjugation" : "こわくないです"},
+			{"id" : "past positive", "conjugation" : "こわかったです"},
+			{"id" : "past negative", "conjugation": "こわくなかったです"}
+		]
+	}
+]
 
 
-
-{
-	"id":0,
-	"name":"past positive",
-	"value":"さむかったです"
-}

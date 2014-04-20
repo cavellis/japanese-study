@@ -1,0 +1,40 @@
+[
+		{
+			"id":0,
+			"word":"さむい",
+			"type":0,
+			"conjugations":
+			[
+				{"id" : "present positive", "value" :さむいです"},
+				{"id" : "present negative", "value" : "さむくないです"},
+				{"id" : "past positive"	 , "value" : "さむかったです"},
+				{"id" : "past negative"   , "value" : "さむくなかったです"}
+			]
+		},
+		{
+			"id":1,
+			"word":"ふるい",
+			"type":0,
+			"conjugations":
+			[
+				{"id" : "present positive", "value" : "ふるいです"},
+				{"id" : "present negative", "value" : "ふるくないです"},
+				{"id" : "past positive"	 , "value" : "ふるかったです"},
+				{"id" : "past negative"	 , "value" : "ふるくなかったです"}
+			]
+		},
+		{
+			"id":2,
+			"word":"こわい",
+			"type":0,
+			"conjugations":
+			[
+				{"id" : "present positive", "value" : "こわいです"},
+				{"id" : "present negative", "value" : "こわくないです"},
+				{"id" : "past positive", "value" : "こわかったです"},
+				{"id" : "past negative", "value": "こわくなかったです"}
+			]
+		}
+	]
+
+

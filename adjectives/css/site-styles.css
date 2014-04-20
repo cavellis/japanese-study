@@ -2,27 +2,27 @@ html body {
 	margin: 0px;
 	padding: 0px;
 	font-family: Ubuntu, Helvetica, Arial, sans-serif;
-	}
-	h2 {
+}
+h2 {
 	color: #882D9E;
 	text-align: center;
-	}
-	h3 {
+}
+h3 {
 	color: #000000;
 	text-align: center;
-	}	
-	h4 {
+}	
+h4 {
 	color: #882D9E;
 	text-align: center;
-	}
-	body {
+}
+body {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 14px;
-	   line-height: 20px;
-	   background-color: #eee;
-	}
+   line-height: 20px;
+   background-color: #eee;
+}
 
-	input {
+input {
 	border: none;
 	display: inline-block;
 	color: #555555;
@@ -32,40 +32,79 @@ html body {
 	line-height: 20px;
 	font-weight: 300;
 	overflow: auto;
-	}
+}
 
-	input:focus {
+input:focus {
 	outline: none;
-	}
+}
+#quiz-preloader
+{
+	position:absolute;
+	width:100%;
+	height: 100%;
+	text-align: center;
+	vertical-align: middle;
+	color: #FFFFFF;
+	background-color: #F0A;
+	font-size: 2em;
+}
+.preloader-text
+{
+	position: relative;
+	top: 50%;
+}
+#quiz-instructions-view
+{
+	position:absolute;
+	width:100%;
+	height: 100%;
+	text-align: center;
+	vertical-align: middle;
+	color: #FFFFFF;
+	background-color: #F0A;
+	font-size: 1.5em;
+	line-height: 120%;
+	z-index: 2;
 
-	.wk-site-header {
+}
+.quiz-instructions{
+	position: relative;
+	top: 30%;
+}
+.site-header {
 	display: block;
 	color: #e5e5e5;
 	background-color: #F0A;
 	border-bottom: 1px solid #1a1a1a;
 	width: auto;
-	height: 40px;
+	height: 60px;
 	padding: 0px;
 	font-size: 1.2em;
 	-webkit-appearance: none;
 	-webkit-box-shadow: 0px 2px 0 #e5e5e5;
 	-moz-box-shadow: 0px 2px 0 #e5e5e5;
 	box-shadow: 0px 2px 0 #e5e5e5;
-	}
+}
 
-	.wk-site-name {
+.site-name {
 	margin-left: 15px;
-	padding-top: 10px;
+	padding-top: 20px;
 	text-decoration: none;
 	font-size: 32px;
 	color: white;
-	}
+}
 
-	.wk-content {
+.quiz-content {
 	padding: 15px 15px 10px 15px;
-	}
-
-	input {
+}
+#correct-incorrect{
+	height:18px;
+	text-align: center;
+}
+.quiz-buttons {
+	text-align: center;
+}
+input {
 	display: block;
 	width: 100%;
 	height: 3em;
@@ -75,9 +114,9 @@ html body {
 	-webkit-box-shadow: 3px 3px 0 #e1e1e1;
 	-moz-box-shadow: 3px 3px 0 #e1e1e1;
 	box-shadow: 3px 3px 0 #e1e1e1;
-	}
+}
 
-	.output {
+.output {
 	font-weight: bold;
 	font-size: 32px;
 	width: 100%;
@@ -91,4 +130,29 @@ html body {
 	-webkit-text-shadow: 0px 3px 0 #eee;
 	-moz-text-shadow: 0px 3px 0 #eee;
 	text-shadow: 0px 3px 0 #eee;
-	}
+}
+
+.green-sea-flat-button 
+{
+  position: relative;
+  vertical-align: top;
+  width: 100%;
+  height: 60px;
+  padding: 0;
+  font-size: 22px;
+  color: white;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+  background: #16a085;
+  border: 0;
+  border-bottom: 2px solid #14947b;
+  cursor: pointer;
+  -webkit-box-shadow: inset 0 -2px #14947b;
+  box-shadow: inset 0 -2px #14947b;
+}
+.green-sea-flat-button:active {
+  top: 1px;
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
