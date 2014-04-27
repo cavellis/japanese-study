@@ -1,40 +1,61 @@
-html body {
+html body 
+{
 	margin: 0px;
 	padding: 0px;
 	font-family: Ubuntu, Helvetica, Arial, sans-serif;
 }
-h2 {
+h1 
+{
+	font-size: 1.5em;
+}
+h2 
+{
 	color: #882D9E;
 	text-align: center;
+	font-size: 1.75em;
 }
-h3 {
+h3 
+{
 	color: #000000;
 	text-align: center;
+	font-size: 1.25em;
 }	
-h4 {
+h4 
+{
 	color: #882D9E;
 	text-align: center;
+	font-size: 1.15em;
 }
-body {
+#question-name
+{
+	color: #882D9E;
+	text-align: center;
+	font-size: 1.5em;
+	padding: 5%5%5%5%;
+}
+body 
+{
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size: 14px;
-   line-height: 20px;
-   background-color: #eee;
+	font-size: 1em;
+	line-height: 20px;
+	background-color: #eee;
 }
 
-input {
+input 
+{
 	border: none;
 	display: inline-block;
 	color: #555555;
 
 	vertical-align: middle;
-	font-size: 1.2em;
+	font-size: 1em;
 	line-height: 20px;
 	font-weight: 300;
 	overflow: auto;
 }
 
-input:focus {
+input:focus
+{
 	outline: none;
 }
 #quiz-preloader
@@ -47,6 +68,7 @@ input:focus {
 	color: #FFFFFF;
 	background-color: #F0A;
 	font-size: 2em;
+	z-index:10;
 }
 .preloader-text
 {
@@ -62,24 +84,25 @@ input:focus {
 	vertical-align: middle;
 	color: #FFFFFF;
 	background-color: #F0A;
-	font-size: 1.5em;
-	line-height: 120%;
+	font-size: 1.15em;
+	line-height: 150%;
 	z-index: 2;
 
 }
 .quiz-instructions{
 	position: relative;
-	top: 30%;
+	top: 15%;
+	padding:2%2%2%2%;
 }
-.site-header {
+.site-header 
+{
 	display: block;
 	color: #e5e5e5;
-	background-color: #F0A;
+	background-color: #2E313D;
 	border-bottom: 1px solid #1a1a1a;
 	width: auto;
-	height: 60px;
+	height: 50px;
 	padding: 0px;
-	font-size: 1.2em;
 	-webkit-appearance: none;
 	-webkit-box-shadow: 0px 2px 0 #e5e5e5;
 	-moz-box-shadow: 0px 2px 0 #e5e5e5;
@@ -90,8 +113,8 @@ input:focus {
 	margin-left: 15px;
 	padding-top: 20px;
 	text-decoration: none;
-	font-size: 32px;
 	color: white;
+	font-size: 1.1em;
 }
 
 .quiz-content {
@@ -100,6 +123,9 @@ input:focus {
 #correct-incorrect{
 	height:18px;
 	text-align: center;
+	font-size: 1.25em;
+	padding-top:10px;
+	padding-bottom: 4px;
 }
 .quiz-buttons {
 	text-align: center;
@@ -107,7 +133,7 @@ input:focus {
 input {
 	display: block;
 	width: 100%;
-	height: 3em;
+	height: 2em;
 	text-align: center;
 
 	-webkit-appearance: none;
@@ -118,7 +144,7 @@ input {
 
 .output {
 	font-weight: bold;
-	font-size: 32px;
+	font-size: 1.25em;
 	width: 100%;
 	height: 40px;
 	text-align: center;
@@ -131,13 +157,17 @@ input {
 	-moz-text-shadow: 0px 3px 0 #eee;
 	text-shadow: 0px 3px 0 #eee;
 }
-
+#input-IME
+{
+	height:2em;
+	font-size: 1.5em;
+}
 .green-sea-flat-button 
 {
   position: relative;
   vertical-align: top;
   width: 100%;
-  height: 60px;
+  height: 40px;
   padding: 0;
   font-size: 22px;
   color: white;
@@ -155,4 +185,33 @@ input {
   outline: none;
   -webkit-box-shadow: none;
   box-shadow: none;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) { 
+	h1 
+	{
+		font-size: 1.25em;
+	}
+	h2 
+	{
+		color: #882D9E;
+		text-align: center;
+		font-size: 1.2em;
+	}
+	h3 
+	{
+		color: #000000;
+		text-align: center;
+		font-size: 1.15em;
+	}	
+	h4 
+	{
+		color: #882D9E;
+		text-align: center;
+		font-size: 1em;
+	}
+
+
+
+
 }
