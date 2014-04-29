@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-	 <link href="css/site-styles.css" rel="stylesheet">
+	<link href="css/site-styles.css" rel="stylesheet">
 
 	<script src="js/libs/jquery-2.1.0.min.js"></script>
 	<script src="js/libs/modernizr.foundation.js"></script>
@@ -16,39 +16,45 @@
 	</head>
 
 	<body>
-		
+		<!-- preloader -->
 		<div id="quiz-preloader">
 		
 			<div class= "preloader-text" id ="quiz-preloader-text">
 				Please Wait...
 			</div>
 		</div>
+		<!-- end preloader -->
 
+		<!-- menu -->
+		<div id = "quiz-menu">
+			<ul>
+				<li><a href="#numbers">Numbers</a>
+				<li><a href="#adjectives">Adjectives</a>
+			</ul>
+		</div>
+		<!-- end menu -->
 
-
+		<!-- quiz view -->
 		<div id='quiz-view'>
 
-			<div class="site-header">
-				<div class="site-name">Japanese - adjectives</div>
+			<div class="quiz-header">
+				<div class="quiz-name">Japanese - adjectives</div>
 			</div>
 
 			<div id="quiz-instructions-view">
 				<div class="quiz-instructions">
-					<h1>Instructions</h1>
-					<p>
-					Let's conjugate some Japanese adjectives. Type in <i>romaji</i> and answer the questions. It will convert to <i>hiragana</i> for you.
-					<p>
+					<div id="quiz-instructions-header">
+						<h1>Instructions</h1>
+					</div>
+					<div id="quiz-instructions-copy"></div>
+
 					<button class="green-sea-flat-button" id = "quiz-start-button">Ok</button>
 				</div>
 			</div>
 
 			<div class="quiz-content">
-
-				<!--
-				<h2>Question 1/10</h2>
-				-->
-				<div id="conjugate-description"><h3>Conjugate to: present negative</h3></div>
-				<div id="question-name">さむい</div>
+				<div id="question-description"></div>
+				<div id="question-name"></div>
 				<div id="correct-incorrect"></div>
 				<div class ="quiz-buttons">
 					<form name="answer">
@@ -59,16 +65,17 @@
 				</div>
 	       	</div>
        	</div>
-		<script type="text/javascript" src="js/libs/wanakana.min.js"></script>
+       	<!-- end quiz view -->
 
 		<!-- Included JS Files -->
+		<script type="text/javascript" src="js/libs/wanakana.min.js"></script>
+
 		<script src="js/libs/underscore.js"></script>
 		<!-- models -->
 		<script src="js/model/QuizItemModel.js"></script>
 		<script src="js/model/QuizItemsCollection.js"></script>
 		<!-- views -->
 		<script src="js/view/QuizView.js"></script>
-
 
 		<script src="js/app.js"></script>
 		<script src="js/main.js"></script>	

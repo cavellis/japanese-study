@@ -40,7 +40,8 @@ App.prototype =
 
 	 	this.collections.quizItemsCollection = quizItemsCollection;
 	 	this.views.quizView = quizView;
-
+	 	
+	 	$("#quiz-menu").hide();
 	 	
 	}
 }

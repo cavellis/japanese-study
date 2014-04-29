@@ -9,7 +9,6 @@ var NumbersQuizView = Backbone.View.extend({
 		"click #quiz-start-button" : "startQuiz"
 			
 	},
-f
 	initialize:function () 
 	{
 

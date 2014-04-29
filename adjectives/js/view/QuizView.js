@@ -9,7 +9,6 @@ var QuizView = Backbone.View.extend({
 		"click #quiz-start-button" : "startQuiz"
 			
 	},
-f
 	initialize:function () 
 	{
 
@@ -40,7 +39,7 @@ f
 		var conjugationType = randomConjugation.id;
 		//display it to user
 		$("#question-name").html("<h4>" + randomQuestion.get("word") + "</h4>");
-		$("#conjugate-description").html("<h3>Conjugate to: " + conjugationType +"</h3>");
+		$("#question-description").html("<h3>Conjugate to: " + conjugationType +"</h3>");
 		//save question so we can check it later
 		this.question = randomConjugation;
     		
@@ -85,7 +84,7 @@ f
 	},
     	render: function( event )
 	{
-
+		$("#quiz-instructions-copy").html("Let's conjugate some Japanese adjectives. Type in <i>romaji</i> and answer the questions. It will convert to <i>hiragana</i> for you.<p>");
 		return this;
 	}
 
