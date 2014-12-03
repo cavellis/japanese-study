@@ -3,36 +3,47 @@ html body
 	margin: 0px;
 	padding: 0px;
 	font-family: Ubuntu, Helvetica, Arial, sans-serif;
+	height:100%;
 }
+
 h1 
 {
 	font-size: 1.5em;
 }
+
 h2 
 {
 	color: #882D9E;
 	text-align: center;
 	font-size: 1.35em;
 }
+
 h3 
 {
 	color: #000000;
 	text-align: center;
 	font-size: 1.25em;
 }	
-h4 
+
+h4
 {
 	color: #882D9E;
 	text-align: center;
 	font-size: 1.15em;
 }
-#question-name
+
+ul
 {
-	color: #882D9E;
-	text-align: center;
-	font-size: 1.5em;
-	padding: 5%5%5%5%;
+    list-style-type: none;
+    text-decoration: none;
+    padding:0;
 }
+
+ul li a 
+{ 
+	text-decoration: none; 
+}
+
 body 
 {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -54,10 +65,39 @@ input
 	overflow: auto;
 }
 
+input 
+{
+	display: block;
+	width: 100%;
+	height: 2em;
+	text-align: center;
+
+	-webkit-appearance: none;
+	-webkit-box-shadow: 3px 3px 0 #e1e1e1;
+	-moz-box-shadow: 3px 3px 0 #e1e1e1;
+	box-shadow: 3px 3px 0 #e1e1e1;
+}
+
 input:focus
 {
 	outline: none;
 }
+/*
+ruby
+{
+	color: #882D9E;
+	text-align: center;
+	font-size: 1.5em;
+}
+*/
+#question-name
+{
+	color: #882D9E;
+	text-align: center;
+	font-size: 2em;
+	padding: 1%1%1%1%;
+}
+
 #quiz-preloader
 {
 	position:absolute;
@@ -70,11 +110,13 @@ input:focus
 	font-size: 2em;
 	z-index:10;
 }
+
 .preloader-text
 {
 	position: relative;
 	top: 50%;
 }
+
 #quiz-instructions-view
 {
 	position:absolute;
@@ -89,6 +131,7 @@ input:focus
 	z-index: 2;
 
 }
+
 #quiz-menu
 {
 	position:absolute;
@@ -102,6 +145,25 @@ input:focus
 	line-height: 150%;
 	z-index: 3;
 }
+#quiz-menu li
+{
+	border-style:solid;
+	border-width:2px;
+	background-color: #eee;
+}
+#quiz-menu li a
+{
+	color:#F0A;
+	padding: 5px 10px;
+	display:inline-block;
+	width:100%;
+
+}
+#quiz-menu li a:hover 
+{
+	background: #fff;
+	color: #222;
+}
 #quiz-view
 {
 	position:absolute;
@@ -113,6 +175,7 @@ input:focus
 	top: 15%;
 	padding:2%2%2%2%;
 }
+
 .quiz-header 
 {
 	display: block;
@@ -126,6 +189,21 @@ input:focus
 	-webkit-box-shadow: 0px 2px 0 #e5e5e5;
 	-moz-box-shadow: 0px 2px 0 #e5e5e5;
 	box-shadow: 0px 2px 0 #e5e5e5;
+
+	-webkit-user-select: none; /* Chrome/Safari */        
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* IE10+ */
+
+}
+.header-home
+{
+	width:32px;
+	height:50px;
+	background-image: url("../img/home-5-24.png");
+	background-repeat:no-repeat;
+	position:relative;
+	float:right;
+	top: -25px;
 }
 
 .quiz-name {
@@ -139,29 +217,24 @@ input:focus
 .quiz-content {
 	padding: 15px 15px 10px 15px;
 }
-#correct-incorrect{
+
+#correct-incorrect
+{
 	height:18px;
 	text-align: center;
 	font-size: 1.25em;
 	padding-top:10px;
-	padding-bottom: 4px;
-}
-.quiz-buttons {
-	text-align: center;
-}
-input {
-	display: block;
-	width: 100%;
-	height: 2em;
-	text-align: center;
-
-	-webkit-appearance: none;
-	-webkit-box-shadow: 3px 3px 0 #e1e1e1;
-	-moz-box-shadow: 3px 3px 0 #e1e1e1;
-	box-shadow: 3px 3px 0 #e1e1e1;
+	padding-bottom: 10px;
 }
 
-.output {
+.quiz-buttons 
+{
+	text-align: center;
+}
+
+
+.output 
+{
 	font-weight: bold;
 	font-size: 1.25em;
 	width: 100%;
@@ -176,11 +249,14 @@ input {
 	-moz-text-shadow: 0px 3px 0 #eee;
 	text-shadow: 0px 3px 0 #eee;
 }
+
+
 #input-IME
 {
 	height:2em;
 	font-size: 1.5em;
 }
+
 .green-sea-flat-button 
 {
   position: relative;
@@ -199,13 +275,96 @@ input {
   -webkit-box-shadow: inset 0 -2px #14947b;
   box-shadow: inset 0 -2px #14947b;
 }
-.green-sea-flat-button:active {
+
+.green-sea-flat-button:active 
+{
   top: 1px;
   outline: none;
   -webkit-box-shadow: none;
   box-shadow: none;
 }
+.quickflip-wrapper
+{
+	width:150px;
+	height:150px;
+}
+.quickFlip-card
+{
+	border: 1px solid;
+	border-radius:25px;
+	background-color: #eee;
+	text-align: center;
+	vertical-align: middle; 
+	width:100%;
 
+}
+.quickFlipCta
+{
+
+}
+.flashcard-face
+{
+	width:150px;
+	height:150px;
+}
+.flashcard-text
+{
+	color: #882D9E;
+	font-size: 1.35em;
+	width:150px;
+	height:150px;
+	position: relative;
+	top: 25%;//50%;
+  	//transform: translateY(-50%);
+}
+.bx-wrapper, .bx-viewport 
+{
+    height: 210px !important; //provide height of slider
+    background-color: #999999;
+
+}
+
+.footer{
+     position:absolute;
+     width:100%;
+     bottom:0;
+     height:30px;
+     background-color:#000000;
+     text-align: center;
+	color: #666666;
+	font-size: .75em;
+     z-index: 20;
+
+}
+.footer a
+{
+	    color: #666666;
+}
+#flashcards
+{
+	/*
+	position:relative;
+	width:100%;
+	height: 100%;
+	text-align: center;
+	vertical-align: middle;
+	color: #FFFFFF;
+	background-color: #000000;
+	z-index:10;
+	*/
+	position:absolute;
+	width:100%;
+	height: 100%;
+	background-color: #000000;
+
+}
+.darkened-bg
+{
+
+	position: relative;
+	top:50%;
+	transform: translateY(-50%);
+}
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) { 
 	h1 
 	{
@@ -229,8 +388,4 @@ input {
 		text-align: center;
 		font-size: 1em;
 	}
-
-
-
-
 }

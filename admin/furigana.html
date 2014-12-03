@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Japanese Admin</title>
+
+
+		<link href="css/site-styles.css" rel="stylesheet">
+
+		<script src="js/libs/jquery.js"></script>
+	</head>
+	<body>
+		<h4>Sentence with furigana:</h4>
+		<div id="output-txt"><h2>[output here]</h2></div>
+		<h4>Raw output:</h4>
+		<div id="raw-output-txt">[raw output here]</div>
+		<div id="instructions">
+		
+		Type a sentence, then select a kanji in the sentence to add furigana.
+		
+		</div>
+
+		<h4>Sentence</h4>
+		<form name = "sentence-form">
+			<input id="input" autofocus="true" autocapitalize="off" autocomplete="off" autocorrect="off" type="text" lang="ja">
+			<button class="green-sea-flat-button" type="button" id="sentence-btn"　onclick="return false;">Submit Sentence</button>
+		</form>
+
+		
+		<div id="kanji-container">
+			<h4>Furigana</h4>
+			<p>Now highlight a word in kanji to set the furigana. Once it's highlighted type in the box below.</p>
+			<div id="kanji">　漢字</div>
+
+			<form id="furigana-form" name="furigana-form">
+				<input id="furigana" class="kanji-input"></div>
+				<button class="green-sea-flat-button" type="button" id="furigana-btn" onclick="return false;">Submit Furigana</button>
+			</form>	
+		</div>
+		<script src="js/App.js"></script>
+	</body>
+
+</html>

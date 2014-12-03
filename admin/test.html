@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+	<head>
+	<meta charset="utf-8">
+	</head>
+	<body>
+		<script>
+		//document.write("hello");
+
+		var str = "this is outside left<ruby><rb>紙芝居</rb><rp>(</rp><rt>かみしばい</rt><rp>)</rp></ruby>";
+		var pattern = "<ruby><rb>紙芝居</rb><rp>(</rp><rt>.*</rt><rp>)</rp></ruby>";
+
+		//str = "yeah so <b>ありがとう</b> asdfasdf";
+		pattern = "<ruby><rb>紙芝居</rb>.*</ruby>";
+		var regEx = new RegExp(pattern);
+		var result = regEx.exec(str);
+		console.log(result);
+		document.write("<h1>" + result[0] + "</h1>");
+		</script>
+	</body>
+</html>

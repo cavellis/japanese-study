@@ -1,0 +1,19 @@
+[
+	{
+		"phrase":"<ruby>図書館<rp>(</rp><rt>としょかん</rt><rp>)</rp></ruby> _ <ruby>日本語<rp>(</rp><rt>にほんご</rt><rp>)</rp></ruby>を<ruby>勉強<rp>(</rp><rt>べんきょう</rt><rp>)</rp></ruby>しました。",
+		"answer":　"で"
+
+	},
+
+	{
+		"phrase":"<ruby>週末<rp>(</rp><rt>しゅうまつ</rt><rp>)</rp></ruby> _ たいてい<ruby>何<rp>(</rp><rt>なに</rt><rp>)</rp></ruby>をしますか。",
+		"answer" : "X"
+	},
+
+	{
+		"phrase" : "<ruby>一時<rp>(</rp><rt>いちじ</rt><rp>)</rp></ruby> _ <ruby>昼ご飯<rp>(</rp><rt>ひるごはん</rt><rp>)</rp></ruby>を<ruby>食<rp>(</rp><rt>た</rt><rp>)</rp></ruby>べます。",
+		"answer" : "に"
+	}
+
+
+]
